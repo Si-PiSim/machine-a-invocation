@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Machine à Invocation</title>
+    <!-- Lien vers notre feuille de style externe -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+        <!-- Section 1 : Le Formulaire d'Invocation -->
+        <section id="invocation-section">
+            <h1>La Machine à Invocation</h1>
+            
+            <form id="invocation">
+                <div class="form-group">
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Ex: Ada" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="creature">Choisissez votre créature</label>
+                    <select id="creature" name="creature" required>
+                        <option value="" disabled selected>-- Sélectionnez une créature --</option>
+                        <option value="🐙 Le Chat-Octo">🐙 Le Chat-Octo</option>
+                        <option value="🐉 Le Dragon-Debug">🐉 Le Dragon-Debug</option>
+                        <option value="🦄 La Licorne-CSS">🦄 La Licorne-CSS</option>
+                        <option value="🦊 Le Renard-Refacto">🦊 Le Renard-Refacto</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn">Invoquer</button>
+            </form>
+        </section>
+
+        <!-- Section 2 : La Zone de Résultat (initialement cachée) -->
+        <section id="resultat" class="cache">
+            <h2>Résultat de l'Invocation</h2>
+            <p id="message"></p>
+            <button id="recommencer" class="btn">Renvoyer la créature</button>
+        </section>
+    </main>
+
+    <!-- Lien vers notre script JavaScript -->
+    <script src="script.js" defer></script>
+</body>
+</html>
