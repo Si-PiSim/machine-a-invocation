@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event) {
     const prenom = prenomInput.value.trim();
     const creature = creatureSelect.value;
 
-    // Petite vérification de sécurité (optionnelle mais propre)
+    
     if (!prenom || !creature) {
         alert("Veuillez entrer un prénom et choisir une créature !");
         return;
